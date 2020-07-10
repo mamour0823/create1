@@ -1,0 +1,765 @@
+@charset "utf-8";
+
+/* ヘッダー */
+.main_v{
+    margin: 5px;
+    position: relative;
+    height: 700px;
+    background: url(./img/img_001.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* フィルター */
+.main_v .filter{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+/* ヘッダー */
+.main_v header{
+    padding: 2em 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* ロゴの部分 */
+.main_v header h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+ 
+/* ナビゲーションメニュー */
+.main_v header nav{
+    margin-left: 5em;
+    width: 100%;
+}
+
+.main_v header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_v header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+@media screen and (max-width:1050px) {
+    .main_v header h1{
+        position: fixed;
+        top:1.5em;
+        left: 2em;
+    }
+    .main_v header nav{
+        display: none;
+    } 
+}
+
+/* ハンバーガーボタン */
+.bam_btn{
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    width: 50px;
+    height: 35px;
+    display: none;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+}
+
+.in_01,
+.in_02,
+.in_03{
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.in_02{
+    width: 67%;
+}
+
+.in_03{
+    width: 36%;
+}
+@media screen and (max-width:1050px) {
+    .bam_btn{
+        display: flex;
+    }
+}
+/* スマホ用メニュー */
+.sp_nav_waku{
+    display: none;
+}
+.sp_nav_waku .sp_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp_nav_waku .sp_menu ul{
+    width: 90%;
+}
+
+.sp_nav_waku .sp_menu ul li{
+    text-align: center;
+}
+
+.sp_nav_waku .sp_menu ul li a{
+    display: block;
+    line-height: 5em;
+    text-decoration: none;
+    color: #26263d;
+    font-weight: bold;
+}
+/* 真ん中の文言 */
+.main_v .cont{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_v .cont .in{
+    color: #fff;
+    height: 200px;
+    text-align: center;
+}
+
+.main_v .cont .in h2{
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+
+.main_v .cont .in p{
+    font-size: 1em;
+    letter-spacing: 0.65em;
+}
+
+.main_v .cont .in a{
+    font-size: .9em;
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fff;
+    display: block;
+    padding: 1em;
+    margin: 2em auto 0 auto;
+    width: 60%;
+    border-radius: 3px;
+    
+}
+
+@media screen and (max-width:375px) {
+    .main_v .cont .in h2{
+        font-size: 2em;
+    }
+}
+
+/* concept */
+.concept{
+    padding: 5em 10% 5em 5%;
+    display: flex;
+}
+
+@media screen and (max-width:1050px) {
+    .concept{
+        padding: 2em 2.5% 2em 2.5%;
+    }
+}
+
+/* 左側 */
+.concept .left_cont{
+    width: 55%;
+    color: #310;
+    text-align: center;
+    margin: 5em 0 2.5em 2.5em;
+
+}
+@media screen and (max-width:1050px) {
+    .concept .left_cont{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .concept .left_cont{
+        width: 100%;
+        margin: 1.5em 2.5em ;
+    }
+    .concept .left_cont h2{
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .concept .left_cont{
+        width: 100%;
+        margin: .5em 2em ;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .concept .left_cont{
+        width: 100%;
+        margin: .1em 2em ;
+    }
+    
+}
+
+.concept .left_cont h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.concept .left_cont h2 span{
+    font-size: .5em;
+    display: block;
+}
+
+.concept .left_cont p{
+    font-size: 0.3em;
+    line-height: 5em;
+    margin: 5em 0;
+
+}
+
+.concept .left_cont a{
+    color: orange;
+}
+
+.concept .left_cont .img_responsive{
+    display: none;
+}
+
+/* 右側 */
+.concept .right_cont{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.concept .right_cont img{
+    width: 48%;
+    object-fit: cover;
+
+}
+
+@media screen and (max-width:750px) {
+    .concept .right_cont{
+        display: none;
+    }
+
+    .concept .left_cont .img_responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    .concept .left_cont .img_responsive img{
+        display: block;
+        width: 48%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:500px) {
+    .concept .right_cont{
+        display: none;
+    }
+
+    .concept .left_cont .img_responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    .concept .left_cont .img_responsive img{
+        display: block;
+        width: 48%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .concept .right_cont{
+        display: none;
+    }
+
+    .concept .left_cont .img_responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    .concept .left_cont .img_responsive img{
+        display: block;
+        width: 48%;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+/* 写真３枚並ぶやつ */
+.concept_img_02{
+    height: 600px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.concept_img_02 img{
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1050px) {
+    .concept_img_02{
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .concept_img_02{
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .concept_img_02{
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .concept_img_02{
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .concept_img_02{
+        height: 170px;
+    }
+    
+}
+
+/* BEST ONE */
+.best_one{
+    padding: 5em 10%;
+    text-align: center;
+}
+
+.best_one h2{
+    color: #310;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 2em;
+}
+
+.best_one h2 span{
+    display: block;
+    font-size: .5em;
+}
+
+.best_one img{
+    width: 100%;
+    height: 850px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1000px) {
+    .best_one img{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .best_one h2{
+        padding-bottom: 1em;
+    }
+    .best_one img{
+        height: 380px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .best_one img{
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .best_one{
+        padding: 0 5px;
+    }
+    .best_one img{
+        height: auto;
+    }
+}
+
+/* PLAN */
+.plan{
+    padding: 0 10% 5em 10%;
+    display: flex;
+
+}
+
+.plan .left_cont{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+
+.plan .left_cont img{
+    width: 49.5%;
+    height: 49%;
+    object-fit: cover;
+}
+
+.plan .right_cont{
+    padding-top: 7em;
+    width: 50%;
+    text-align: center;
+    color: #310;
+}
+
+.plan .right_cont h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.plan .right_cont h2 span{
+    font-weight: bold;
+    font-size: .5em;
+    display: block;
+    padding: 1em 0;
+}
+
+.plan .right_cont p{
+    font-size: .8em;
+    line-height: 2em;
+    padding: 4em 0 5em 0;
+
+}
+
+.plan .right_cont a{
+    font-weight: bold;
+    color: orange;
+}
+
+@media screen and (max-width:1250px) {
+    .plan .right_cont{
+        padding: 0 0 0 5%;
+    }
+    
+    
+}
+
+@media screen and (max-width:1150px) {
+    .plan .right_cont{
+        padding: 0 0 0 5%;
+    }
+    .plan{
+        padding: 0 3% 5em 7%;
+    }
+    
+    
+}
+
+@media screen and (max-width:1000px) {
+    .plan .right_cont{
+        padding: 0 0 0 2%;
+    }
+    .plan{
+        padding: 0 3% 5em 5%;
+    }
+    
+    
+}
+
+@media screen and (max-width:900px) {
+    .plan{
+        padding: 0 5px 5em 5px;
+        flex-wrap: wrap-reverse;
+    }
+    .plan .right_cont,
+    .plan .left_cont{
+        width: 100%;
+    }
+
+    .plan .right_cont p{
+        padding: 2em 0 3em 0;
+    }
+    .plan .right_cont a{
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .plan .left_cont{
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+  
+}
+
+@media screen and (max-width:550px) {
+    .plan{
+        margin-top: 3em;
+    }
+    .plan .right_cont p{
+        font-size: .5em;
+    }
+}
+
+/* クロージング画像 */
+.closing{
+    background:url(./img/clothing_talk_img.jpg);
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closing .filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #092b61;
+    opacity: .3;
+
+}
+
+.closing h2{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.closing h2 span{
+    display: block;
+    font-size: .4em;
+    font-weight: 100;
+}
+
+@media screen and (max-width:500px) {
+    .closing h2{
+        font-size: 2em;
+    }
+}
+/* 申し込みフォーム */
+.f_form{
+    margin: 0 auto;
+    padding: 5em 0;
+    width: 70%;
+    max-width: 800px;
+}
+.f_form .title{
+    text-align: center;
+    color: #381010;
+}
+.f_form .title h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+.f_form .title p{
+    margin: 2em 0;
+    line-height: 1.7em;
+    font-size: .8em;
+}
+
+/* フォーム本体 */
+.f_form form p{
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.f_form form label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 250px;
+    
+}
+
+.f_form form label span{
+    background-color: #310;
+    color: #fff;
+    margin: 0 2em 0 1em;
+    padding: .3em .5em;
+}
+.f_form form .memo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.f_form  form .memo label{
+    margin-top: -12em;
+}
+
+.f_form  form input,
+.f_form  form textarea{
+    padding: .6em;
+    width: 80%;
+    background: #eee;
+    border: none;
+}
+
+::placeholder{
+    color: #bbb;
+}
+
+/* 送信ボタン */
+.f_form form .btn{
+    background-color: orange;
+    margin: 5em auto;
+    padding: 2em .5em;
+    display: block;
+    width: 300px;
+    font-size: .5em;
+    color: #fff;
+    text-shadow: 1px 1px 2px #474747;
+    box-shadow: 1px 1px 2px #474747;
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width:750px) {
+    .f_form{
+        width: 85%;
+    }
+    .f_form form p{
+        flex-wrap: wrap;
+    }
+    .f_form  form input,
+    .f_form  form textarea{
+        width: 100%;
+        margin: .5em 0 .7em 0;
+    }
+    .f_form form label{
+        justify-content: start;
+    }
+    .f_form  form .memo label{
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .f_form .title p{
+        text-align: left;
+    }
+    .f_form{
+        padding: 5em 0 2em 0;
+    }
+    
+}
+
+/* フッター部分 */
+footer{
+    background-color:#aaa;
+
+}
+
+footer nav{
+    margin: 0 auto;
+    padding: 5em;
+    background-color: #092952;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer nav ul li a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer .copyright{
+    background-color: #2e456e;
+    color: #fff;
+    text-align: center;
+    line-height: 3em;
+    font-size: .8em;
+}
+
+@media screen and (max-width:1000px) {
+    footer nav{
+        padding: 4em 10%;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    footer nav{
+        padding: 3em 10%;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    footer nav{
+        padding: 3em 5%;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    footer nav{
+        padding: 3em 0;
+    }
+    
+    footer nav ul li{
+        width: 33%;
+        text-align: center;
+    }
+
+    footer .copyright{
+        font-size: .5em;
+    }
+}
+
